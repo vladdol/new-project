@@ -1,0 +1,32 @@
+.features {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.features__list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.features__box-svg {
+  background: #f5f4fa;
+  border-radius: 4px;
+  background-color: $second-bg-color;
+
+  margin-bottom: 30px;
+  @extend %flex-center;
+  padding: 25px 0;
+}
+
+.features__subject {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-color;
+
+  margin-bottom: 10px;
+}

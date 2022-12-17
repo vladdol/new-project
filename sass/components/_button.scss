@@ -1,0 +1,37 @@
+.button {
+  display: flex;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 24px;
+  @extend %margin-auto-center;
+  border: none;
+  cursor: pointer;
+  min-width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.88;
+  @extend %flex-center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color-active;
+  }
+}
+
+.footer-email__button {
+  @extend %flex-center;
+}
+
+.footer-email__svg {
+  fill: $bg-color;
+  margin-left: 12px;
+}
+
+

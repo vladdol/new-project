@@ -1,0 +1,62 @@
+.modal__form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+  }
+  
+  .modal__input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+    margin-top: 4px;
+    outline: transparent;
+    padding: 12px 16px 12px 42px;
+  
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:focus {
+      border-color: $accent-color;
+    }
+  }
+  
+  .modal__textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 120px;
+    margin-top: 4px;
+    padding: 12px 16px;
+    outline: transparent;
+    resize: none;
+  
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+      border-color: $accent-color;
+    }
+  
+    &::placeholder {
+      line-height: calc(16 / 14);
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+  
+  .modal__svg-label {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    .modal__input:focus ~ & {
+      fill: $accent-color;
+    }
+  }

@@ -1,0 +1,13 @@
+.container {
+  padding: 0 15px 0 15px;
+  @extend %margin-auto-center;
+  min-width: 320px;
+
+  @include mobile {
+    width: 480px;
+  }
+
+  @include tablet {
+    width: 768px;
+  }
+}

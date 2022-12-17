@@ -1,0 +1,37 @@
+.customers {
+  padding: 60px 0;
+}
+
+.customers__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.customes__item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.customers__link {
+  @extend %flex-center;
+
+  border: 1px solid $svg-color;
+  border-radius: 4px;
+  padding: 16px 0;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.customes__svg {
+  fill: $svg-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .customers__link:hover &,
+  .customers__link:focus & {
+    fill: $accent-color;
+  }
+}

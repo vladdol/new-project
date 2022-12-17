@@ -1,0 +1,24 @@
+.header{
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header-container {
+  @extend %flex-center;
+  justify-content: space-between;
+}
+
+.header__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  transition: fill 250ms ease-in-out;
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+  }
+
+  @include tablet{
+    display: none;
+  }
+}

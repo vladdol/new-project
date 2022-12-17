@@ -1,0 +1,11 @@
+.footer {
+  background-color: $footer-bg-color;
+  padding: 60px 0;
+  margin-top: auto;
+}
+
+.footer-box {
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+}

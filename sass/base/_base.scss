@@ -1,0 +1,34 @@
+.page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: $general-color;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.list {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.title,
+.paragraf {
+  margin: 0;
+  padding: 0;
+}
