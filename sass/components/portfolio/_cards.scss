@@ -34,6 +34,8 @@
 .cards__img {
   display: block;
   width: 100%;
+
+  min-width: 320px;
 }
 
 .cards__link {
@@ -88,11 +90,13 @@
   border-top: none;
   padding: 20px 24px;
 
-  .cards__item:first-child & {
-    padding-bottom: 56px;
+  @include tablet {
+    .cards__item:first-child & {
+      padding-bottom: 56px;
 
-    @include desctop {
-      padding-bottom: 20px;
+      @include desctop {
+        padding-bottom: 20px;
+      }
     }
   }
 }
