@@ -1,5 +1,10 @@
 .customers {
   padding: 60px 0;
+
+  @include desctop{
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .customers__list {
@@ -10,6 +15,14 @@
 
 .customes__item {
   flex-basis: calc((100% - 30px) / 2);
+
+  @include tablet {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  @include desctop{
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .customers__link {

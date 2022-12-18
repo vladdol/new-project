@@ -1,16 +1,25 @@
-.header{
-  border-bottom: 1px solid #ECECEC;
+.header {
+  border-bottom: 1px solid #ececec;
+
 }
 
 .header-container {
-  @extend %flex-center;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+
+  @include desctop {
+    justify-content:start ;
+  }
 }
 
 .header__button {
-  background-color: transparent;
+  background-color:transparent ;
+  @extend %flex-center;
   border: none;
   cursor: pointer;
+  margin-left: auto;
+  padding: 0;
 
   transition: fill 250ms ease-in-out;
   &:focus,
@@ -18,7 +27,7 @@
     fill: $accent-color;
   }
 
-  @include tablet{
+  @include tablet {
     display: none;
   }
 }

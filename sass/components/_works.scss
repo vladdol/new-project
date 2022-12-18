@@ -1,0 +1,36 @@
+.works {
+  @include min-desctop {
+    display: none;
+  }
+  padding-bottom: 94px;
+}
+
+.works__list {
+  display: flex;
+  gap: 30px;
+}
+
+.works__item {
+  position: relative;
+}
+
+.works__paragraf {
+  position: absolute;
+  @extend %flex-center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #fff;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.works__img{
+    display: block;
+    width: 100%;
+    height: auto;
+}

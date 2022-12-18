@@ -8,4 +8,22 @@
   display: flex;
   gap: 60px;
   flex-direction: column;
+
+  @include desctop{
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 93px;
+  }
+}
+
+.footer__tablet-box{
+  display: flex;
+  gap: 70px;
+  flex-direction: column;
+
+  @include tablet{
+    flex-direction: row;
+    justify-content:space-around ;
+  }
+  
 }

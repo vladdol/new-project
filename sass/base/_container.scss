@@ -10,4 +10,8 @@
   @include tablet {
     width: 768px;
   }
+
+  @include desctop {
+    width: 1200px;
+  }
 }

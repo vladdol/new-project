@@ -20,3 +20,15 @@
     @content;
   }
 }
+
+@mixin desctop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin min-desctop {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}

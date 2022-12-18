@@ -1,5 +1,9 @@
 .footer-contact {
   text-align: center;
+
+  @include tablet{
+    text-align: left;
+  }
 }
 
 .footer-contact__address {

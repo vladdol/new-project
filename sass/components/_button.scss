@@ -25,6 +25,12 @@
   }
 }
 
+.hero__button--large {
+  @include desctop {
+    min-width: 216px;
+  }
+}
+
 .footer-email__button {
   @extend %flex-center;
 }
@@ -33,5 +39,3 @@
   fill: $bg-color;
   margin-left: 12px;
 }
-
-

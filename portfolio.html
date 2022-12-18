@@ -26,8 +26,44 @@
       <header class="header">
         <div class="container header-container">
           <a class="link logo" href="./"> <span class="logo__web">Web</span>Studio </a>
+
+          <!-- nav -->
+          <nav class="nav">
+            <ul class="list nav-list">
+              <li class="nav__item">
+                <a href="./" class="link nav__link">Студія</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="link nav__link nav__link--active">Портфоліо</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="link nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- contact -->
+          <ul class="list contact">
+            <li class="contact__item">
+              <a href="emailto:info@devstudio.com" class="link contact__link">
+                <svg class="contact__svg" width="14" height="10">
+                  <use href="./images/symbol-defs.svg#envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contact__item">
+              <a href="tel:+380961111111" class="link contact__link">
+                <svg class="contact__svg" width="10" height="14">
+                  <use href="./images/symbol-defs.svg#phone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+
           <button class="header__button" type="button">
-            <svg class="mobile-menu-svg js-open-menu" width="40" height="40">
+            <svg class="nav-svg js-open-menu" width="40" height="40">
               <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
             </svg>
           </button>
@@ -59,12 +95,18 @@
                   <div class="cards__image-box">
                     <img
                       srcset="
-                        ./images/portfolio/portfolio-480-01@1x.jpg  450w,
-                        ./images/portfolio/portfolio-480-01@2x.jpg  900w,
-                        ./images/portfolio/portfolio-480-01@3x.jpg 1350w
+                        ./images/portfolio/portfolio-480-01@1x.jpg   450w,
+                        ./images/portfolio/portfolio-480-01@2x.jpg   900w,
+                        ./images/portfolio/portfolio-480-01@3x.jpg  1350w,
+                        ./images/portfolio/portfolio-768-01@1x.jpg   354w,
+                        ./images/portfolio/portfolio-768-01@2x.jpg   708w,
+                        ./images/portfolio/portfolio-768-01@3x.jpg  1062w,
+                        ./images/portfolio/portfolio-1200-01@1x.jpg  370w,
+                        ./images/portfolio/portfolio-1200-01@2x.jpg  740w,
+                        ./images/portfolio/portfolio-1200-01@3x.jpg 1110w
                       "
                       src="./images/portfolio/portfolio-480-01@1x.jpg"
-                      sizes="(min-width:480px) 450px, 100vw"
+                      sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                       alt="Технокряк"
                       class="cards__img"
                     />
@@ -85,12 +127,18 @@
                   <div class="cards__image-box">
                     <img
                       srcset="
-                        ./images/portfolio/portfolio-480-02@1x.jpg  450w,
-                        ./images/portfolio/portfolio-480-02@2x.jpg  900w,
-                        ./images/portfolio/portfolio-480-02@3x.jpg 1350w
+                        ./images/portfolio/portfolio-480-02@1x.jpg   450w,
+                        ./images/portfolio/portfolio-480-02@2x.jpg   900w,
+                        ./images/portfolio/portfolio-480-02@3x.jpg  1350w,
+                        ./images/portfolio/portfolio-768-02@1x.jpg   354w,
+                        ./images/portfolio/portfolio-768-02@2x.jpg   708w,
+                        ./images/portfolio/portfolio-768-02@3x.jpg  1062w,
+                        ./images/portfolio/portfolio-1200-02@1x.jpg  370w,
+                        ./images/portfolio/portfolio-1200-02@2x.jpg  740w,
+                        ./images/portfolio/portfolio-1200-02@3x.jpg 1110w
                       "
                       src="./images/portfolio/portfolio-480-02@1x.jpg"
-                      sizes="(min-width:480px) 450px, 100vw"
+                      sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                       alt="Технокряк"
                       class="cards__img"
                     />
@@ -111,12 +159,18 @@
                   <div class="cards__image-box">
                     <img
                       srcset="
-                        ./images/portfolio/portfolio-480-03@1x.jpg  450w,
-                        ./images/portfolio/portfolio-480-03@2x.jpg  900w,
-                        ./images/portfolio/portfolio-480-03@3x.jpg 1350w
+                        ./images/portfolio/portfolio-480-03@1x.jpg   450w,
+                        ./images/portfolio/portfolio-480-03@2x.jpg   900w,
+                        ./images/portfolio/portfolio-480-03@3x.jpg  1350w,
+                        ./images/portfolio/portfolio-768-03@1x.jpg   354w,
+                        ./images/portfolio/portfolio-768-03@2x.jpg   708w,
+                        ./images/portfolio/portfolio-768-03@3x.jpg  1062w,
+                        ./images/portfolio/portfolio-1200-03@1x.jpg  370w,
+                        ./images/portfolio/portfolio-1200-03@2x.jpg  740w,
+                        ./images/portfolio/portfolio-1200-03@3x.jpg 1110w
                       "
                       src="./images/portfolio/portfolio-480-03@1x.jpg"
-                      sizes="(min-width:480px) 450px, 100vw"
+                      sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                       alt="Технокряк"
                       class="cards__img"
                     />
@@ -137,12 +191,18 @@
                   <div class="cards__image-box">
                     <img
                       srcset="
-                        ./images/portfolio/portfolio-480-04@1x.jpg  450w,
-                        ./images/portfolio/portfolio-480-04@2x.jpg  900w,
-                        ./images/portfolio/portfolio-480-04@3x.jpg 1350w
+                        ./images/portfolio/portfolio-480-04@1x.jpg   450w,
+                        ./images/portfolio/portfolio-480-04@2x.jpg   900w,
+                        ./images/portfolio/portfolio-480-04@3x.jpg  1350w,
+                        ./images/portfolio/portfolio-768-04@1x.jpg   354w,
+                        ./images/portfolio/portfolio-768-04@2x.jpg   708w,
+                        ./images/portfolio/portfolio-768-04@3x.jpg  1062w,
+                        ./images/portfolio/portfolio-1200-04@1x.jpg  370w,
+                        ./images/portfolio/portfolio-1200-04@2x.jpg  740w,
+                        ./images/portfolio/portfolio-1200-04@3x.jpg 1110w
                       "
                       src="./images/portfolio/portfolio-480-04@1x.jpg"
-                      sizes="(min-width:480px) 450px, 100vw"
+                      sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                       alt="Технокряк"
                       class="cards__img"
                     />
@@ -163,12 +223,18 @@
                   <div class="cards__image-box">
                     <img
                       srcset="
-                        ./images/portfolio/portfolio-480-05@1x.jpg  450w,
-                        ./images/portfolio/portfolio-480-05@2x.jpg  900w,
-                        ./images/portfolio/portfolio-480-05@3x.jpg 1350w
+                        ./images/portfolio/portfolio-480-05@1x.jpg   450w,
+                        ./images/portfolio/portfolio-480-05@2x.jpg   900w,
+                        ./images/portfolio/portfolio-480-05@3x.jpg  1350w,
+                        ./images/portfolio/portfolio-768-05@1x.jpg   354w,
+                        ./images/portfolio/portfolio-768-05@2x.jpg   708w,
+                        ./images/portfolio/portfolio-768-05@3x.jpg  1062w,
+                        ./images/portfolio/portfolio-1200-05@1x.jpg  370w,
+                        ./images/portfolio/portfolio-1200-05@2x.jpg  740w,
+                        ./images/portfolio/portfolio-1200-05@3x.jpg 1110w
                       "
                       src="./images/portfolio/portfolio-480-05@1x.jpg"
-                      sizes="(min-width:480px) 450px, 100vw"
+                      sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                       alt="Технокряк"
                       class="cards__img"
                     />
@@ -189,12 +255,18 @@
                   <div class="cards__image-box">
                     <img
                       srcset="
-                        ./images/portfolio/portfolio-480-06@1x.jpg  450w,
-                        ./images/portfolio/portfolio-480-06@2x.jpg  900w,
-                        ./images/portfolio/portfolio-480-06@3x.jpg 1350w
+                        ./images/portfolio/portfolio-480-06@1x.jpg   450w,
+                        ./images/portfolio/portfolio-480-06@2x.jpg   900w,
+                        ./images/portfolio/portfolio-480-06@3x.jpg  1350w,
+                        ./images/portfolio/portfolio-768-06@1x.jpg   354w,
+                        ./images/portfolio/portfolio-768-06@2x.jpg   708w,
+                        ./images/portfolio/portfolio-768-06@3x.jpg  1062w,
+                        ./images/portfolio/portfolio-1200-06@1x.jpg  370w,
+                        ./images/portfolio/portfolio-1200-06@2x.jpg  740w,
+                        ./images/portfolio/portfolio-1200-06@3x.jpg 1110w
                       "
                       src="./images/portfolio/portfolio-480-06@1x.jpg"
-                      sizes="(min-width:480px) 450px, 100vw"
+                      sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                       alt="Технокряк"
                       class="cards__img"
                     />
@@ -215,12 +287,18 @@
                   <div class="cards__image-box">
                     <img
                       srcset="
-                        ./images/portfolio/portfolio-480-07@1x.jpg  450w,
-                        ./images/portfolio/portfolio-480-07@2x.jpg  900w,
-                        ./images/portfolio/portfolio-480-07@3x.jpg 1350w
+                        ./images/portfolio/portfolio-480-07@1x.jpg   450w,
+                        ./images/portfolio/portfolio-480-07@2x.jpg   900w,
+                        ./images/portfolio/portfolio-480-07@3x.jpg  1350w,
+                        ./images/portfolio/portfolio-768-07@1x.jpg   354w,
+                        ./images/portfolio/portfolio-768-07@2x.jpg   708w,
+                        ./images/portfolio/portfolio-768-07@3x.jpg  1062w,
+                        ./images/portfolio/portfolio-1200-07@1x.jpg  370w,
+                        ./images/portfolio/portfolio-1200-07@2x.jpg  740w,
+                        ./images/portfolio/portfolio-1200-07@3x.jpg 1110w
                       "
                       src="./images/portfolio/portfolio-480-07@1x.jpg"
-                      sizes="(min-width:480px) 450px, 100vw"
+                      sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                       alt="Технокряк"
                       class="cards__img"
                     />
@@ -241,12 +319,18 @@
                   <div class="cards__image-box">
                     <img
                       srcset="
-                        ./images/portfolio/portfolio-480-08@1x.jpg  450w,
-                        ./images/portfolio/portfolio-480-08@2x.jpg  900w,
-                        ./images/portfolio/portfolio-480-08@3x.jpg 1350w
+                        ./images/portfolio/portfolio-480-08@1x.jpg   450w,
+                        ./images/portfolio/portfolio-480-08@2x.jpg   900w,
+                        ./images/portfolio/portfolio-480-08@3x.jpg  1350w,
+                        ./images/portfolio/portfolio-768-08@1x.jpg   354w,
+                        ./images/portfolio/portfolio-768-08@2x.jpg   708w,
+                        ./images/portfolio/portfolio-768-08@3x.jpg  1062w,
+                        ./images/portfolio/portfolio-1200-08@1x.jpg  370w,
+                        ./images/portfolio/portfolio-1200-08@2x.jpg  740w,
+                        ./images/portfolio/portfolio-1200-08@3x.jpg 1110w
                       "
                       src="./images/portfolio/portfolio-480-08@1x.jpg"
-                      sizes="(min-width:480px) 450px, 100vw"
+                      sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                       alt="Технокряк"
                       class="cards__img"
                     />
@@ -267,12 +351,18 @@
                   <div class="cards__image-box">
                     <img
                       srcset="
-                        ./images/portfolio/portfolio-480-09@1x.jpg  450w,
-                        ./images/portfolio/portfolio-480-09@2x.jpg  900w,
-                        ./images/portfolio/portfolio-480-09@3x.jpg 1350w
+                        ./images/portfolio/portfolio-480-09@1x.jpg   450w,
+                        ./images/portfolio/portfolio-480-09@2x.jpg   900w,
+                        ./images/portfolio/portfolio-480-09@3x.jpg  1350w,
+                        ./images/portfolio/portfolio-768-09@1x.jpg   354w,
+                        ./images/portfolio/portfolio-768-09@2x.jpg   708w,
+                        ./images/portfolio/portfolio-768-09@3x.jpg  1062w,
+                        ./images/portfolio/portfolio-1200-09@1x.jpg  370w,
+                        ./images/portfolio/portfolio-1200-09@2x.jpg  740w,
+                        ./images/portfolio/portfolio-1200-09@3x.jpg 1110w
                       "
                       src="./images/portfolio/portfolio-480-09@1x.jpg"
-                      sizes="(min-width:480px) 450px, 100vw"
+                      sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                       alt="Технокряк"
                       class="cards__img"
                     />
@@ -292,63 +382,66 @@
           </div>
         </section>
       </main>
+
       <!-- footer -->
       <footer class="footer">
         <div class="container footer-box">
-          <div class="footer-contact">
-            <a class="link logo footer--white" href="">
-              <span class="logo__web">Web</span>Studio
-            </a>
-            <address class="footer-contact__address">
-              <ul class="list footer-contact__list">
-                <li class="footer-contact__item">
-                  <a class="link footer-contact__link" href="">м. Київ, пр-т Лесі Українки, 26</a>
+          <div class="footer__tablet-box">
+            <div class="footer-contact">
+              <a class="link logo footer--white" href="">
+                <span class="logo__web">Web</span>Studio
+              </a>
+              <address class="footer-contact__address">
+                <ul class="list footer-contact__list">
+                  <li class="footer-contact__item">
+                    <a class="link footer-contact__link" href="">м. Київ, пр-т Лесі Українки, 26</a>
+                  </li>
+                  <li class="footer-contact__item">
+                    <a class="link footer-contact__link" href="emailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="footer-contact__item">
+                    <a class="link footer-contact__link" href="tel:+380961111111"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="footer-join">
+              <h3 class="title footer__title">приєднуйтесь</h3>
+              <ul class="list team-box__list-ico">
+                <li class="list-ico__items">
+                  <a href="" class="list-ico__link list-ico__link--grey">
+                    <svg class="list-ico__svg list-ico__svg--white" width="20" height="20">
+                      <use href="images/symbol-defs.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer-contact__item">
-                  <a class="link footer-contact__link" href="emailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
+                <li class="list-ico__items">
+                  <a href="" class="list-ico__link list-ico__link--grey">
+                    <svg class="list-ico__svg list-ico__svg--white" width="20" height="20">
+                      <use href="images/symbol-defs.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer-contact__item">
-                  <a class="link footer-contact__link" href="tel:+380961111111"
-                    >+38 096 111 11 11</a
-                  >
+                <li class="list-ico__items">
+                  <a href="" class="list-ico__link list-ico__link--grey">
+                    <svg class="list-ico__svg list-ico__svg--white" width="20" height="20">
+                      <use href="images/symbol-defs.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-ico__items">
+                  <a href="" class="list-ico__link list-ico__link--grey">
+                    <svg class="list-ico__svg list-ico__svg--white" width="20" height="20">
+                      <use href="images/symbol-defs.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
-          </div>
-          <div class="footer-join">
-            <h3 class="title footer__title">приєднуйтесь</h3>
-            <ul class="list team-box__list-ico">
-              <li class="list-ico__items">
-                <a href="" class="list-ico__link list-ico__link--grey">
-                  <svg class="list-ico__svg list-ico__svg--white" width="20" height="20">
-                    <use href="images/symbol-defs.svg#icon-instagram-2"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="list-ico__items">
-                <a href="" class="list-ico__link list-ico__link--grey">
-                  <svg class="list-ico__svg list-ico__svg--white" width="20" height="20">
-                    <use href="images/symbol-defs.svg#icon-twitter-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="list-ico__items">
-                <a href="" class="list-ico__link list-ico__link--grey">
-                  <svg class="list-ico__svg list-ico__svg--white" width="20" height="20">
-                    <use href="images/symbol-defs.svg#icon-facebook-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="list-ico__items">
-                <a href="" class="list-ico__link list-ico__link--grey">
-                  <svg class="list-ico__svg list-ico__svg--white" width="20" height="20">
-                    <use href="images/symbol-defs.svg#icon-linkedin-1"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            </div>
           </div>
           <div class="footer-email">
             <h3 class="title footer__title">Підпишіться на розсилку</h3>

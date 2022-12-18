@@ -1,16 +1,30 @@
 .features {
   padding-bottom: 60px;
   padding-top: 60px;
+
+  @include desctop{
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
-.features__list{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.features__list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.features__items {
+  @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @include desctop{
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .features__box-svg {
-  background: #f5f4fa;
   border-radius: 4px;
   background-color: $second-bg-color;
 
@@ -22,11 +36,15 @@
 .features__subject {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $title-color;
 
   margin-bottom: 10px;
 }
+
+.features__description{
+  line-height: 1.17;
+}
+
