@@ -30,6 +30,9 @@
     width: 450px;
   }
   
+  @include desctop{
+    width: 528px;
+  }
 }
 
 .modal-title {
